@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F43B39F23D0B5200029C84C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43B39E23D0B5200029C84C /* AppDelegate.swift */; };
+		1F43B3A823D0B5230029C84C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F43B3A723D0B5230029C84C /* Assets.xcassets */; };
+		1F43B3AB23D0B5230029C84C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F43B3A923D0B5230029C84C /* LaunchScreen.storyboard */; };
+		1F43B3B723D0B5D90029C84C /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43B3B523D0B5D90029C84C /* GalleryViewController.swift */; };
+		1F43B3B823D0B5D90029C84C /* GalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F43B3B623D0B5D90029C84C /* GalleryViewController.xib */; };
+		1F43B3BA23D0B62A0029C84C /* ListCompetitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43B3B923D0B62A0029C84C /* ListCompetitions.swift */; };
+		1F43B3BC23D0B6410029C84C /* Competitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43B3BB23D0B6410029C84C /* Competitions.swift */; };
+		1F43B3BE23D0B7000029C84C /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43B3BD23D0B7000029C84C /* Area.swift */; };
+		1F43B3C023D0B7500029C84C /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43B3BF23D0B7500029C84C /* Season.swift */; };
+		1F43B3C223D0DBAF0029C84C /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43B3C123D0DBAF0029C84C /* Team.swift */; };
+		1F43B3C423D0E6030029C84C /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43B3C323D0E6030029C84C /* Filter.swift */; };
+		1F43B3C623D0E6BC0029C84C /* ListCompetitionsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43B3C523D0E6BC0029C84C /* ListCompetitionsFactory.swift */; };
+		1F43B3C823D0E71E0029C84C /* CompetitionsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43B3C723D0E71E0029C84C /* CompetitionsFactory.swift */; };
+		1F43B3CA23D0E7550029C84C /* AreaFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43B3C923D0E7550029C84C /* AreaFactory.swift */; };
+		1F43B3CC23D0E7E60029C84C /* SeasonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43B3CB23D0E7E60029C84C /* SeasonFactory.swift */; };
+		1F43B3CE23D0E96B0029C84C /* TeamFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43B3CD23D0E96B0029C84C /* TeamFactory.swift */; };
+		1F43B3D023D0EA410029C84C /* FilterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43B3CF23D0EA410029C84C /* FilterFactory.swift */; };
+		1F43B3D223D0EB720029C84C /* ListCompetitionsWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43B3D123D0EB720029C84C /* ListCompetitionsWebService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F43B39B23D0B5200029C84C /* BetSGI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetSGI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F43B39E23D0B5200029C84C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F43B3A723D0B5230029C84C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F43B3AA23D0B5230029C84C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F43B3AC23D0B5230029C84C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F43B3B523D0B5D90029C84C /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		1F43B3B623D0B5D90029C84C /* GalleryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryViewController.xib; sourceTree = "<group>"; };
+		1F43B3B923D0B62A0029C84C /* ListCompetitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCompetitions.swift; sourceTree = "<group>"; };
+		1F43B3BB23D0B6410029C84C /* Competitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Competitions.swift; sourceTree = "<group>"; };
+		1F43B3BD23D0B7000029C84C /* Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
+		1F43B3BF23D0B7500029C84C /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
+		1F43B3C123D0DBAF0029C84C /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		1F43B3C323D0E6030029C84C /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		1F43B3C523D0E6BC0029C84C /* ListCompetitionsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCompetitionsFactory.swift; sourceTree = "<group>"; };
+		1F43B3C723D0E71E0029C84C /* CompetitionsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsFactory.swift; sourceTree = "<group>"; };
+		1F43B3C923D0E7550029C84C /* AreaFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaFactory.swift; sourceTree = "<group>"; };
+		1F43B3CB23D0E7E60029C84C /* SeasonFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonFactory.swift; sourceTree = "<group>"; };
+		1F43B3CD23D0E96B0029C84C /* TeamFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamFactory.swift; sourceTree = "<group>"; };
+		1F43B3CF23D0EA410029C84C /* FilterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterFactory.swift; sourceTree = "<group>"; };
+		1F43B3D123D0EB720029C84C /* ListCompetitionsWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCompetitionsWebService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F43B39823D0B5200029C84C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F43B39223D0B5200029C84C = {
+			isa = PBXGroup;
+			children = (
+				1F43B39D23D0B5200029C84C /* BetSGI */,
+				1F43B39C23D0B5200029C84C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F43B39C23D0B5200029C84C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F43B39B23D0B5200029C84C /* BetSGI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F43B39D23D0B5200029C84C /* BetSGI */ = {
+			isa = PBXGroup;
+			children = (
+				1F43B3B423D0B5B10029C84C /* Scenes */,
+				1F43B3B323D0B59F0029C84C /* Models */,
+				1F43B3B223D0B5940029C84C /* Services */,
+				1F43B39E23D0B5200029C84C /* AppDelegate.swift */,
+				1F43B3A723D0B5230029C84C /* Assets.xcassets */,
+				1F43B3A923D0B5230029C84C /* LaunchScreen.storyboard */,
+				1F43B3AC23D0B5230029C84C /* Info.plist */,
+			);
+			path = BetSGI;
+			sourceTree = "<group>";
+		};
+		1F43B3B223D0B5940029C84C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1F43B3C523D0E6BC0029C84C /* ListCompetitionsFactory.swift */,
+				1F43B3C723D0E71E0029C84C /* CompetitionsFactory.swift */,
+				1F43B3C923D0E7550029C84C /* AreaFactory.swift */,
+				1F43B3CB23D0E7E60029C84C /* SeasonFactory.swift */,
+				1F43B3CD23D0E96B0029C84C /* TeamFactory.swift */,
+				1F43B3CF23D0EA410029C84C /* FilterFactory.swift */,
+				1F43B3D123D0EB720029C84C /* ListCompetitionsWebService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1F43B3B323D0B59F0029C84C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F43B3B923D0B62A0029C84C /* ListCompetitions.swift */,
+				1F43B3BB23D0B6410029C84C /* Competitions.swift */,
+				1F43B3BD23D0B7000029C84C /* Area.swift */,
+				1F43B3BF23D0B7500029C84C /* Season.swift */,
+				1F43B3C123D0DBAF0029C84C /* Team.swift */,
+				1F43B3C323D0E6030029C84C /* Filter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1F43B3B423D0B5B10029C84C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1F43B3B523D0B5D90029C84C /* GalleryViewController.swift */,
+				1F43B3B623D0B5D90029C84C /* GalleryViewController.xib */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F43B39A23D0B5200029C84C /* BetSGI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F43B3AF23D0B5230029C84C /* Build configuration list for PBXNativeTarget "BetSGI" */;
+			buildPhases = (
+				1F43B39723D0B5200029C84C /* Sources */,
+				1F43B39823D0B5200029C84C /* Frameworks */,
+				1F43B39923D0B5200029C84C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BetSGI;
+			productName = BetSGI;
+			productReference = 1F43B39B23D0B5200029C84C /* BetSGI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F43B39323D0B5200029C84C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "MATTHIEU HABIB";
+				TargetAttributes = {
+					1F43B39A23D0B5200029C84C = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 1F43B39623D0B5200029C84C /* Build configuration list for PBXProject "BetSGI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F43B39223D0B5200029C84C;
+			productRefGroup = 1F43B39C23D0B5200029C84C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F43B39A23D0B5200029C84C /* BetSGI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F43B39923D0B5200029C84C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F43B3AB23D0B5230029C84C /* LaunchScreen.storyboard in Resources */,
+				1F43B3B823D0B5D90029C84C /* GalleryViewController.xib in Resources */,
+				1F43B3A823D0B5230029C84C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F43B39723D0B5200029C84C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F43B3C623D0E6BC0029C84C /* ListCompetitionsFactory.swift in Sources */,
+				1F43B3BE23D0B7000029C84C /* Area.swift in Sources */,
+				1F43B3D023D0EA410029C84C /* FilterFactory.swift in Sources */,
+				1F43B39F23D0B5200029C84C /* AppDelegate.swift in Sources */,
+				1F43B3CC23D0E7E60029C84C /* SeasonFactory.swift in Sources */,
+				1F43B3C223D0DBAF0029C84C /* Team.swift in Sources */,
+				1F43B3CA23D0E7550029C84C /* AreaFactory.swift in Sources */,
+				1F43B3C823D0E71E0029C84C /* CompetitionsFactory.swift in Sources */,
+				1F43B3B723D0B5D90029C84C /* GalleryViewController.swift in Sources */,
+				1F43B3CE23D0E96B0029C84C /* TeamFactory.swift in Sources */,
+				1F43B3BA23D0B62A0029C84C /* ListCompetitions.swift in Sources */,
+				1F43B3C423D0E6030029C84C /* Filter.swift in Sources */,
+				1F43B3D223D0EB720029C84C /* ListCompetitionsWebService.swift in Sources */,
+				1F43B3C023D0B7500029C84C /* Season.swift in Sources */,
+				1F43B3BC23D0B6410029C84C /* Competitions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1F43B3A923D0B5230029C84C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F43B3AA23D0B5230029C84C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F43B3AD23D0B5230029C84C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F43B3AE23D0B5230029C84C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F43B3B023D0B5230029C84C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JCSK4M9M9Y;
+				INFOPLIST_FILE = BetSGI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ESGI.BetSGI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F43B3B123D0B5230029C84C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JCSK4M9M9Y;
+				INFOPLIST_FILE = BetSGI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ESGI.BetSGI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F43B39623D0B5200029C84C /* Build configuration list for PBXProject "BetSGI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F43B3AD23D0B5230029C84C /* Debug */,
+				1F43B3AE23D0B5230029C84C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F43B3AF23D0B5230029C84C /* Build configuration list for PBXNativeTarget "BetSGI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F43B3B023D0B5230029C84C /* Debug */,
+				1F43B3B123D0B5230029C84C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F43B39323D0B5200029C84C /* Project object */;
+}
