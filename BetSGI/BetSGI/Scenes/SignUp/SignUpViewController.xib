@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="KaushanScript-Regular.otf">
+            <string>KaushanScript-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="BetSGI" customModuleProvider="target">
+            <connections>
+                <outlet property="errorMessage" destination="IiN-CI-GsG" id="WNB-OF-DmP"/>
+                <outlet property="firstName" destination="VI9-vE-GgE" id="dtz-pc-MDG"/>
+                <outlet property="mailAddress" destination="JQb-G4-FUa" id="jwX-6f-hNz"/>
+                <outlet property="password" destination="h3T-9C-oew" id="cE4-zs-lcs"/>
+                <outlet property="passwordConfirm" destination="gth-zz-lKE" id="RD8-zo-DIR"/>
+                <outlet property="view" destination="ALu-UX-GsR" id="4Cx-U2-kX7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ALu-UX-GsR">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="green-iphone-wallpaper-19" translatesAutoresizingMaskIntoConstraints="NO" id="Mcr-xj-df1">
+                    <rect key="frame" x="-1558" y="-576" width="4209" height="2027"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BetSGI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8VG-uV-1TT">
+                    <rect key="frame" x="98" y="94" width="218" height="102"/>
+                    <fontDescription key="fontDescription" name="KaushanScript-Regular" family="Kaushan Script" pointSize="70"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Copyright © 2020 E S G I" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7e-fr-hXc" userLabel="Copyright">
+                    <rect key="frame" x="115.5" y="861" width="183.5" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="KaushanScript-Regular" family="Kaushan Script" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prénom : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tcz-vX-HHc" userLabel="firstNameLabel">
+                    <rect key="frame" x="20" y="226" width="118.5" height="50"/>
+                    <fontDescription key="fontDescription" name="KaushanScript-Regular" family="Kaushan Script" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VI9-vE-GgE" userLabel="firstNameField">
+                    <rect key="frame" x="20" y="286" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mot de passe : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rih-LY-pch" userLabel="pwdLabel">
+                    <rect key="frame" x="20" y="448" width="176" height="44"/>
+                    <fontDescription key="fontDescription" name="KaushanScript-Regular" family="Kaushan Script" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h3T-9C-oew" userLabel="pwdField">
+                    <rect key="frame" x="20" y="502" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmation du mot de passe : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4In-8O-T79" userLabel="pwdConfirmLabel">
+                    <rect key="frame" x="20" y="556" width="374" height="44"/>
+                    <fontDescription key="fontDescription" name="KaushanScript-Regular" family="Kaushan Script" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gth-zz-lKE" userLabel="pwdConfirmField">
+                    <rect key="frame" x="20" y="610" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adresse mail : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Il-ym-5gU" userLabel="mailLabel">
+                    <rect key="frame" x="20" y="340" width="170" height="44"/>
+                    <fontDescription key="fontDescription" name="KaushanScript-Regular" family="Kaushan Script" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JQb-G4-FUa" userLabel="mailField">
+                    <rect key="frame" x="20" y="394" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4s-HB-MKf">
+                    <rect key="frame" x="137.5" y="719" width="139" height="65"/>
+                    <fontDescription key="fontDescription" name="KaushanScript-Regular" family="Kaushan Script" pointSize="36"/>
+                    <state key="normal" title="S'inscrire">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="signUp:" destination="-1" eventType="touchUpInside" id="xvl-jC-yny"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ErrorLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IiN-CI-GsG">
+                    <rect key="frame" x="155.5" y="201" width="103" height="35"/>
+                    <fontDescription key="fontDescription" name="KaushanScript-Regular" family="Kaushan Script" pointSize="24"/>
+                    <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VI9-vE-GgE" firstAttribute="leading" secondItem="B9Q-nt-UI9" secondAttribute="leading" constant="20" id="1V9-ef-Aic"/>
+                <constraint firstItem="B9Q-nt-UI9" firstAttribute="trailing" secondItem="JQb-G4-FUa" secondAttribute="trailing" constant="20" id="4e7-Zd-oCe"/>
+                <constraint firstItem="h3T-9C-oew" firstAttribute="top" secondItem="Rih-LY-pch" secondAttribute="bottom" constant="10" id="5Yf-nh-fNW"/>
+                <constraint firstItem="VI9-vE-GgE" firstAttribute="top" secondItem="IiN-CI-GsG" secondAttribute="bottom" constant="50" id="5iV-64-3aN"/>
+                <constraint firstItem="4Il-ym-5gU" firstAttribute="leading" secondItem="B9Q-nt-UI9" secondAttribute="leading" constant="20" id="7bx-g7-Ywj"/>
+                <constraint firstItem="Tcz-vX-HHc" firstAttribute="top" secondItem="8VG-uV-1TT" secondAttribute="bottom" constant="30" id="7p3-Vl-7ZR"/>
+                <constraint firstItem="JQb-G4-FUa" firstAttribute="top" secondItem="4Il-ym-5gU" secondAttribute="bottom" constant="10" id="BBT-rR-LYr"/>
+                <constraint firstItem="B9Q-nt-UI9" firstAttribute="trailing" secondItem="VI9-vE-GgE" secondAttribute="trailing" constant="20" id="EAE-OM-MKg"/>
+                <constraint firstItem="h4s-HB-MKf" firstAttribute="centerX" secondItem="ALu-UX-GsR" secondAttribute="centerX" id="EYL-zD-n2A"/>
+                <constraint firstItem="h3T-9C-oew" firstAttribute="leading" secondItem="B9Q-nt-UI9" secondAttribute="leading" constant="20" id="IsK-j6-qEC"/>
+                <constraint firstItem="h4s-HB-MKf" firstAttribute="top" secondItem="gth-zz-lKE" secondAttribute="bottom" constant="75" id="NTs-0v-abz"/>
+                <constraint firstItem="VI9-vE-GgE" firstAttribute="top" secondItem="Tcz-vX-HHc" secondAttribute="bottom" constant="10" id="P77-1a-ROm"/>
+                <constraint firstItem="4Il-ym-5gU" firstAttribute="top" secondItem="VI9-vE-GgE" secondAttribute="bottom" constant="20" id="R6G-f7-DdW"/>
+                <constraint firstItem="Tcz-vX-HHc" firstAttribute="leading" secondItem="B9Q-nt-UI9" secondAttribute="leading" constant="20" id="Sdn-LI-g5f"/>
+                <constraint firstItem="IiN-CI-GsG" firstAttribute="top" secondItem="8VG-uV-1TT" secondAttribute="bottom" constant="5" id="SzU-Z1-k5P"/>
+                <constraint firstItem="gth-zz-lKE" firstAttribute="leading" secondItem="B9Q-nt-UI9" secondAttribute="leading" constant="20" id="TDb-px-sFZ"/>
+                <constraint firstItem="gth-zz-lKE" firstAttribute="top" secondItem="4In-8O-T79" secondAttribute="bottom" constant="10" id="TqU-Tt-pBz"/>
+                <constraint firstItem="B9Q-nt-UI9" firstAttribute="trailing" secondItem="gth-zz-lKE" secondAttribute="trailing" constant="20" id="VnV-PL-lXH"/>
+                <constraint firstItem="8VG-uV-1TT" firstAttribute="centerX" secondItem="ALu-UX-GsR" secondAttribute="centerX" id="bgL-1g-Q3q"/>
+                <constraint firstItem="8VG-uV-1TT" firstAttribute="top" secondItem="B9Q-nt-UI9" secondAttribute="top" constant="50" id="exk-bS-LP1"/>
+                <constraint firstItem="JQb-G4-FUa" firstAttribute="leading" secondItem="B9Q-nt-UI9" secondAttribute="leading" constant="20" id="fNu-Eh-H0d"/>
+                <constraint firstItem="Rih-LY-pch" firstAttribute="top" secondItem="JQb-G4-FUa" secondAttribute="bottom" constant="20" id="jem-My-VeA"/>
+                <constraint firstItem="B9Q-nt-UI9" firstAttribute="trailing" secondItem="h3T-9C-oew" secondAttribute="trailing" constant="20" id="mDF-7Z-0vD"/>
+                <constraint firstItem="h4s-HB-MKf" firstAttribute="centerX" secondItem="ALu-UX-GsR" secondAttribute="centerX" id="niD-xT-x0A"/>
+                <constraint firstItem="4In-8O-T79" firstAttribute="leading" secondItem="B9Q-nt-UI9" secondAttribute="leading" constant="20" id="oes-37-Avb"/>
+                <constraint firstItem="Rih-LY-pch" firstAttribute="leading" secondItem="B9Q-nt-UI9" secondAttribute="leading" constant="20" id="qZj-AB-w7B"/>
+                <constraint firstItem="IiN-CI-GsG" firstAttribute="centerX" secondItem="ALu-UX-GsR" secondAttribute="centerX" id="qd6-V1-9yt"/>
+                <constraint firstItem="4In-8O-T79" firstAttribute="top" secondItem="h3T-9C-oew" secondAttribute="bottom" constant="20" id="ub0-kX-UlB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="B9Q-nt-UI9"/>
+            <point key="canvasLocation" x="131.8840579710145" y="143.97321428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="green-iphone-wallpaper-19" width="750" height="1334"/>
+    </resources>
+</document>
