@@ -17,8 +17,14 @@ class MatchTableViewCell: UITableViewCell {
     @IBOutlet var scoreTeamOne: UILabel!
     @IBOutlet var scoreTeamTwo: UILabel!
     @IBOutlet var matchDate: UILabel! // "dd/MM/yyyy HH:mm"
-    
+    @IBOutlet var coteHomeTeam: UILabel!
+    @IBOutlet var coteAwayTeam: UILabel!
+    @IBOutlet var coteNull: UILabel!
+
     override func awakeFromNib() {
+        let coteTeamOne: Int = 1
+        let coteTeamTwo: Int = 2
+        let coteTeamNull: Int = 3
         let scoreOne: Int = 4
         let scoreTwo: Int = 0
         teamOneLogo.image = UIImage(named: "logoPsg")
@@ -27,12 +33,48 @@ class MatchTableViewCell: UITableViewCell {
         teamTwoName.text = "OM"
         scoreTeamOne.text = String(scoreOne)
         scoreTeamTwo.text = String(scoreTwo)
+        coteHomeTeam.text = String(coteTeamOne)
+        coteNull.text = String(coteTeamNull)
+        coteAwayTeam.text = String(coteTeamTwo)
         if(scoreOne > scoreTwo) {
                 
         }
-        super.awakeFromNib()
+        
+//      Traitement pour rendre les labels des cotes cliquable
+        
+        let touchCoteAway = UITapGestureRecognizer(target: self, action: #selector(MatchTableViewCell.betAwayTeam))
+        coteAwayTeam.isUserInteractionEnabled = true
+        coteAwayTeam.addGestureRecognizer(touchCoteAway)
+        
+        let touchCoteHome = UITapGestureRecognizer(target: self, action: #selector(MatchTableViewCell.betHomeTeam))
+        coteHomeTeam.isUserInteractionEnabled = true
+        coteHomeTeam.addGestureRecognizer(touchCoteHome)
+        
+        let touchCoteNull = UITapGestureRecognizer(target: self, action: #selector(MatchTableViewCell.betNull))
+        coteNull.isUserInteractionEnabled = true
+        coteNull.addGestureRecognizer(touchCoteNull)
+
+        
+        super.awakeFromNib()  // On est pas censer appeler la super avant les initialisation ??
         // Initialization code
     }
+    
+    @objc
+    func betAwayTeam(sender: UITapGestureRecognizer){
+        // Appel Wservice pour parier sur la team exterieur
+    }
+    
+    @objc
+    func betHomeTeam(_sender: Any){
+//        Appel Wservice pour parier sur la team a domicile
+    }
+    
+    @objc
+    func betNull(_sender: Any){
+//        Appel Wservice pour parier sur null
+    }
+    
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
