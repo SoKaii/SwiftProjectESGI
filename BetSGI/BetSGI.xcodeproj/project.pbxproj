@@ -40,6 +40,10 @@
 		6BFD2EBB23D9A9AF006CE92A /* MatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFD2EB923D9A9AF006CE92A /* MatchTableViewCell.swift */; };
 		6BFD2EC223D9AA1F006CE92A /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFD2EC023D9AA1F006CE92A /* HomeTableViewController.swift */; };
 		6BFD2EC323D9AA1F006CE92A /* HomeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BFD2EC123D9AA1F006CE92A /* HomeTableViewController.xib */; };
+		CF6E514923FE0BE700CE8F42 /* CreateRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6E514723FE0BE700CE8F42 /* CreateRoomViewController.swift */; };
+		CF6E514A23FE0BE700CE8F42 /* CreateRoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6E514823FE0BE700CE8F42 /* CreateRoomViewController.xib */; };
+		CF8D6CD023FCD1830032B0A8 /* DeleteRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8D6CCE23FCD1830032B0A8 /* DeleteRoomViewController.swift */; };
+		CF8D6CD123FCD1830032B0A8 /* DeleteRoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF8D6CCF23FCD1830032B0A8 /* DeleteRoomViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +94,10 @@
 		6BFD2EB923D9A9AF006CE92A /* MatchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchTableViewCell.swift; sourceTree = "<group>"; };
 		6BFD2EC023D9AA1F006CE92A /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		6BFD2EC123D9AA1F006CE92A /* HomeTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewController.xib; sourceTree = "<group>"; };
+		CF6E514723FE0BE700CE8F42 /* CreateRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomViewController.swift; sourceTree = "<group>"; };
+		CF6E514823FE0BE700CE8F42 /* CreateRoomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateRoomViewController.xib; sourceTree = "<group>"; };
+		CF8D6CCE23FCD1830032B0A8 /* DeleteRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteRoomViewController.swift; sourceTree = "<group>"; };
+		CF8D6CCF23FCD1830032B0A8 /* DeleteRoomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeleteRoomViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +204,8 @@
 		6B8E5C9E23D6E365008646AF /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CF6E514623FE0BC900CE8F42 /* CreateRoom */,
+				CF8D6CC923FCD1090032B0A8 /* DeleteRoom */,
 				6BFD2EAB23D99B40006CE92A /* RoomCell */,
 				6BFD2EAA23D99B35006CE92A /* MatchCell */,
 				6BFD2EA523D84CF7006CE92A /* Home */,
@@ -255,6 +265,24 @@
 				6BFD2EB123D99B64006CE92A /* RoomTableViewCell.xib */,
 			);
 			path = RoomCell;
+			sourceTree = "<group>";
+		};
+		CF6E514623FE0BC900CE8F42 /* CreateRoom */ = {
+			isa = PBXGroup;
+			children = (
+				CF6E514723FE0BE700CE8F42 /* CreateRoomViewController.swift */,
+				CF6E514823FE0BE700CE8F42 /* CreateRoomViewController.xib */,
+			);
+			path = CreateRoom;
+			sourceTree = "<group>";
+		};
+		CF8D6CC923FCD1090032B0A8 /* DeleteRoom */ = {
+			isa = PBXGroup;
+			children = (
+				CF8D6CCE23FCD1830032B0A8 /* DeleteRoomViewController.swift */,
+				CF8D6CCF23FCD1830032B0A8 /* DeleteRoomViewController.xib */,
+			);
+			path = DeleteRoom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +370,8 @@
 				6BFD2EC323D9AA1F006CE92A /* HomeTableViewController.xib in Resources */,
 				6BFD2EBA23D9A9AF006CE92A /* MatchTableViewCell.xib in Resources */,
 				6B8E5CA623D6E4B5008646AF /* AuthenticationViewController.xib in Resources */,
+				CF8D6CD123FCD1830032B0A8 /* DeleteRoomViewController.xib in Resources */,
+				CF6E514A23FE0BE700CE8F42 /* CreateRoomViewController.xib in Resources */,
 				6B8E5C8523D5DF96008646AF /* Assets.xcassets in Resources */,
 				6B0D090923D6F85600BA4FA9 /* KaushanScript-Regular.otf in Resources */,
 				6B0D090E23D704C200BA4FA9 /* green-iphone-wallpaper-19.jpg in Resources */,
@@ -379,9 +409,11 @@
 				6B8E5CA523D6E4B5008646AF /* AuthenticationViewController.swift in Sources */,
 				6B692CBA23EAB1280028F91E /* Area.swift in Sources */,
 				6B692CC223EAB1510028F91E /* CompetitionsFactory.swift in Sources */,
+				CF6E514923FE0BE700CE8F42 /* CreateRoomViewController.swift in Sources */,
 				6B692CB323EAB1280028F91E /* Competitions.swift in Sources */,
 				6B692CC623EAB1510028F91E /* SeasonFactory.swift in Sources */,
 				6B692CC523EAB1510028F91E /* ListCompetitionsWebService.swift in Sources */,
+				CF8D6CD023FCD1830032B0A8 /* DeleteRoomViewController.swift in Sources */,
 				6B692CB623EAB1280028F91E /* Team.swift in Sources */,
 				6B692CB923EAB1280028F91E /* Filter.swift in Sources */,
 				6B692CC323EAB1510028F91E /* AreaFactory.swift in Sources */,

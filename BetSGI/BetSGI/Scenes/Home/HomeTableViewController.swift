@@ -17,7 +17,11 @@ class HomeTableViewController: UITableViewController {
     var rooms : [Room]!
     let dateFormatter = DateFormatter()
     
-    
+    class func newInstance() -> HomeTableViewController {
+        let home = HomeTableViewController()
+        // appel du wService pour récupérer les room de l'utilisateur
+        return home
+    }
     
     @IBOutlet var tableV: UITableView!
     

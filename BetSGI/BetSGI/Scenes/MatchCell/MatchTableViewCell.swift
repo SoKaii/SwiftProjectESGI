@@ -62,16 +62,19 @@ class MatchTableViewCell: UITableViewCell {
     @objc
     func betAwayTeam(sender: UITapGestureRecognizer){
         // Appel Wservice pour parier sur la team exterieur
+        print("bet Away Team")      // for test
     }
     
     @objc
-    func betHomeTeam(_sender: Any){
+    func betHomeTeam(_sender: UITapGestureRecognizer){
 //        Appel Wservice pour parier sur la team a domicile
+        print("bet Home Team")      // for test
     }
     
     @objc
-    func betNull(_sender: Any){
+    func betNull(_sender: UITapGestureRecognizer){
 //        Appel Wservice pour parier sur null
+        print("bet Away Team")      // for test
     }
     
     
