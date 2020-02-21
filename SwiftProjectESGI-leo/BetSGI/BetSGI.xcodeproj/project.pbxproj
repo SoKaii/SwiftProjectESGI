@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B0D090623D6F72C00BA4FA9 /* Milkshake.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B0D090523D6F72C00BA4FA9 /* Milkshake.ttf */; };
+		6B0D090923D6F85600BA4FA9 /* KaushanScript-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6B0D090823D6F85600BA4FA9 /* KaushanScript-Regular.otf */; };
+		6B0D090B23D704AA00BA4FA9 /* Screenshot at Jan 21 10-41-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B0D090A23D704AA00BA4FA9 /* Screenshot at Jan 21 10-41-40.png */; };
+		6B0D091223D710B500BA4FA9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0D091023D710B400BA4FA9 /* SignUpViewController.swift */; };
+		6B0D091323D710B500BA4FA9 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B0D091123D710B400BA4FA9 /* SignUpViewController.xib */; };
+		6B692CB523EAB1280028F91E /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B692CAD23EAB1280028F91E /* Room.swift */; };
+		6B692CB623EAB1280028F91E /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B692CAE23EAB1280028F91E /* Team.swift */; };
+		6B692CB823EAB1280028F91E /* Matche.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B692CB023EAB1280028F91E /* Matche.swift */; };
+		6B692CC823EAB1510028F91E /* TeamFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B692CC123EAB1510028F91E /* TeamFactory.swift */; };
+		6B8E5C7C23D5DF94008646AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E5C7B23D5DF94008646AF /* AppDelegate.swift */; };
+		6B8E5C8523D5DF96008646AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B8E5C8423D5DF96008646AF /* Assets.xcassets */; };
+		6B8E5C9323D5DF97008646AF /* BetSGIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E5C9223D5DF97008646AF /* BetSGIUITests.swift */; };
+		6B8E5CA123D6E3DF008646AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B8E5CA023D6E3DF008646AF /* LaunchScreen.storyboard */; };
+		6BB309E724005B43003A9491 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB309E524005B43003A9491 /* AuthenticationViewController.swift */; };
+		6BB309E824005B43003A9491 /* AuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BB309E624005B43003A9491 /* AuthenticationViewController.xib */; };
+		6BB309EA24005F4D003A9491 /* Bet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB309E924005F4D003A9491 /* Bet.swift */; };
+		6BB309EC2400675B003A9491 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB309EB2400675B003A9491 /* Player.swift */; };
+		6BB309EE24006E2A003A9491 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB309ED24006E2A003A9491 /* User.swift */; };
+		6BB309F2240075EE003A9491 /* TeamWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB309F1240075EE003A9491 /* TeamWebService.swift */; };
+		6BB309F4240077F3003A9491 /* MatcheFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB309F3240077F3003A9491 /* MatcheFactory.swift */; };
+		6BB309F6240078F3003A9491 /* MatcheWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB309F5240078F3003A9491 /* MatcheWebService.swift */; };
+		6BB309F824007954003A9491 /* PlayerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB309F724007954003A9491 /* PlayerFactory.swift */; };
+		6BB309FA240079F7003A9491 /* PlayerWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB309F9240079F7003A9491 /* PlayerWebService.swift */; };
+		6BB309FC24007ACF003A9491 /* RoomFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB309FB24007ACF003A9491 /* RoomFactory.swift */; };
+		6BB309FE24007B57003A9491 /* RoomWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB309FD24007B57003A9491 /* RoomWebService.swift */; };
+		6BB30A0024007BAF003A9491 /* UserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB309FF24007BAF003A9491 /* UserFactory.swift */; };
+		6BB30A0224007C36003A9491 /* UserWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB30A0124007C36003A9491 /* UserWebService.swift */; };
+		6BB30A0424007C77003A9491 /* BetFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB30A0324007C77003A9491 /* BetFactory.swift */; };
+		6BB30A0624007CFC003A9491 /* BetWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB30A0524007CFC003A9491 /* BetWebService.swift */; };
+		6BFD2EB223D99B64006CE92A /* RoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFD2EB023D99B64006CE92A /* RoomTableViewCell.swift */; };
+		6BFD2EB323D99B64006CE92A /* RoomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BFD2EB123D99B64006CE92A /* RoomTableViewCell.xib */; };
+		6BFD2EBA23D9A9AF006CE92A /* MatchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BFD2EB823D9A9AF006CE92A /* MatchTableViewCell.xib */; };
+		6BFD2EBB23D9A9AF006CE92A /* MatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFD2EB923D9A9AF006CE92A /* MatchTableViewCell.swift */; };
+		6BFD2EC223D9AA1F006CE92A /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFD2EC023D9AA1F006CE92A /* HomeTableViewController.swift */; };
+		6BFD2EC323D9AA1F006CE92A /* HomeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BFD2EC123D9AA1F006CE92A /* HomeTableViewController.xib */; };
+		CF6E514923FE0BE700CE8F42 /* CreateRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6E514723FE0BE700CE8F42 /* CreateRoomViewController.swift */; };
+		CF6E514A23FE0BE700CE8F42 /* CreateRoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6E514823FE0BE700CE8F42 /* CreateRoomViewController.xib */; };
+		CF8D6CD023FCD1830032B0A8 /* DeleteRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8D6CCE23FCD1830032B0A8 /* DeleteRoomViewController.swift */; };
+		CF8D6CD123FCD1830032B0A8 /* DeleteRoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF8D6CCF23FCD1830032B0A8 /* DeleteRoomViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B8E5C8F23D5DF97008646AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B8E5C7023D5DF94008646AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B8E5C7723D5DF94008646AF;
+			remoteInfo = BetSGI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6B0D090523D6F72C00BA4FA9 /* Milkshake.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Milkshake.ttf; sourceTree = "<group>"; };
+		6B0D090823D6F85600BA4FA9 /* KaushanScript-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KaushanScript-Regular.otf"; sourceTree = "<group>"; };
+		6B0D090A23D704AA00BA4FA9 /* Screenshot at Jan 21 10-41-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot at Jan 21 10-41-40.png"; sourceTree = "<group>"; };
+		6B0D090D23D704C200BA4FA9 /* green-iphone-wallpaper-19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "green-iphone-wallpaper-19.jpg"; path = "../../../../../Pictures/green-iphone-wallpaper-19.jpg"; sourceTree = "<group>"; };
+		6B0D091023D710B400BA4FA9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		6B0D091123D710B400BA4FA9 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		6B692CAD23EAB1280028F91E /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		6B692CAE23EAB1280028F91E /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		6B692CB023EAB1280028F91E /* Matche.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matche.swift; sourceTree = "<group>"; };
+		6B692CC123EAB1510028F91E /* TeamFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamFactory.swift; sourceTree = "<group>"; };
+		6B8E5C7823D5DF94008646AF /* BetSGI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetSGI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B8E5C7B23D5DF94008646AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6B8E5C8423D5DF96008646AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B8E5C8923D5DF96008646AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B8E5C8E23D5DF97008646AF /* BetSGIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetSGIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B8E5C9223D5DF97008646AF /* BetSGIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetSGIUITests.swift; sourceTree = "<group>"; };
+		6B8E5C9423D5DF97008646AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B8E5CA023D6E3DF008646AF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6BB309E524005B43003A9491 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthenticationViewController.swift; path = "BetSGI/Scenes/Authentication /AuthenticationViewController.swift"; sourceTree = SOURCE_ROOT; };
+		6BB309E624005B43003A9491 /* AuthenticationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AuthenticationViewController.xib; path = "BetSGI/Scenes/Authentication /AuthenticationViewController.xib"; sourceTree = SOURCE_ROOT; };
+		6BB309E924005F4D003A9491 /* Bet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bet.swift; sourceTree = "<group>"; };
+		6BB309EB2400675B003A9491 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		6BB309ED24006E2A003A9491 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6BB309F1240075EE003A9491 /* TeamWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamWebService.swift; sourceTree = "<group>"; };
+		6BB309F3240077F3003A9491 /* MatcheFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatcheFactory.swift; sourceTree = "<group>"; };
+		6BB309F5240078F3003A9491 /* MatcheWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatcheWebService.swift; sourceTree = "<group>"; };
+		6BB309F724007954003A9491 /* PlayerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerFactory.swift; sourceTree = "<group>"; };
+		6BB309F9240079F7003A9491 /* PlayerWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerWebService.swift; sourceTree = "<group>"; };
+		6BB309FB24007ACF003A9491 /* RoomFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomFactory.swift; sourceTree = "<group>"; };
+		6BB309FD24007B57003A9491 /* RoomWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomWebService.swift; sourceTree = "<group>"; };
+		6BB309FF24007BAF003A9491 /* UserFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFactory.swift; sourceTree = "<group>"; };
+		6BB30A0124007C36003A9491 /* UserWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWebService.swift; sourceTree = "<group>"; };
+		6BB30A0324007C77003A9491 /* BetFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetFactory.swift; sourceTree = "<group>"; };
+		6BB30A0524007CFC003A9491 /* BetWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetWebService.swift; sourceTree = "<group>"; };
+		6BFD2EB023D99B64006CE92A /* RoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomTableViewCell.swift; sourceTree = "<group>"; };
+		6BFD2EB123D99B64006CE92A /* RoomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomTableViewCell.xib; sourceTree = "<group>"; };
+		6BFD2EB823D9A9AF006CE92A /* MatchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MatchTableViewCell.xib; sourceTree = "<group>"; };
+		6BFD2EB923D9A9AF006CE92A /* MatchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchTableViewCell.swift; sourceTree = "<group>"; };
+		6BFD2EC023D9AA1F006CE92A /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		6BFD2EC123D9AA1F006CE92A /* HomeTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewController.xib; sourceTree = "<group>"; };
+		CF6E514723FE0BE700CE8F42 /* CreateRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomViewController.swift; sourceTree = "<group>"; };
+		CF6E514823FE0BE700CE8F42 /* CreateRoomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateRoomViewController.xib; sourceTree = "<group>"; };
+		CF8D6CCE23FCD1830032B0A8 /* DeleteRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteRoomViewController.swift; sourceTree = "<group>"; };
+		CF8D6CCF23FCD1830032B0A8 /* DeleteRoomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeleteRoomViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B8E5C7523D5DF94008646AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B8E5C8B23D5DF97008646AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B0D090723D6F73A00BA4FA9 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6B0D090823D6F85600BA4FA9 /* KaushanScript-Regular.otf */,
+				6B0D090523D6F72C00BA4FA9 /* Milkshake.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		6B0D090C23D704B500BA4FA9 /* ressources */ = {
+			isa = PBXGroup;
+			children = (
+				6B0D090D23D704C200BA4FA9 /* green-iphone-wallpaper-19.jpg */,
+				6B0D090A23D704AA00BA4FA9 /* Screenshot at Jan 21 10-41-40.png */,
+			);
+			path = ressources;
+			sourceTree = "<group>";
+		};
+		6B0D090F23D7109600BA4FA9 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				6B0D091023D710B400BA4FA9 /* SignUpViewController.swift */,
+				6B0D091123D710B400BA4FA9 /* SignUpViewController.xib */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		6B8E5C6F23D5DF94008646AF = {
+			isa = PBXGroup;
+			children = (
+				6B8E5C7A23D5DF94008646AF /* BetSGI */,
+				6B0D090723D6F73A00BA4FA9 /* fonts */,
+				6B0D090C23D704B500BA4FA9 /* ressources */,
+				6B8E5C9123D5DF97008646AF /* BetSGIUITests */,
+				6B8E5C7923D5DF94008646AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B8E5C7923D5DF94008646AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B8E5C7823D5DF94008646AF /* BetSGI.app */,
+				6B8E5C8E23D5DF97008646AF /* BetSGIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B8E5C7A23D5DF94008646AF /* BetSGI */ = {
+			isa = PBXGroup;
+			children = (
+				6B8E5C9F23D6E36A008646AF /* Models */,
+				6B8E5C9E23D6E365008646AF /* Scenes */,
+				6B8E5C9D23D6E35C008646AF /* Services */,
+				6B8E5C7B23D5DF94008646AF /* AppDelegate.swift */,
+				6B8E5C8423D5DF96008646AF /* Assets.xcassets */,
+				6B8E5C8923D5DF96008646AF /* Info.plist */,
+			);
+			path = BetSGI;
+			sourceTree = "<group>";
+		};
+		6B8E5C9123D5DF97008646AF /* BetSGIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6B8E5C9223D5DF97008646AF /* BetSGIUITests.swift */,
+				6B8E5C9423D5DF97008646AF /* Info.plist */,
+			);
+			path = BetSGIUITests;
+			sourceTree = "<group>";
+		};
+		6B8E5C9D23D6E35C008646AF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6BB309F0240075CF003A9491 /* Factory */,
+				6BB309EF240075C8003A9491 /* WebServices */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6B8E5C9E23D6E365008646AF /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				6BB309E424005AF9003A9491 /* Authentication */,
+				CF6E514623FE0BC900CE8F42 /* CreateRoom */,
+				CF8D6CC923FCD1090032B0A8 /* DeleteRoom */,
+				6BFD2EAB23D99B40006CE92A /* RoomCell */,
+				6BFD2EAA23D99B35006CE92A /* MatchCell */,
+				6BFD2EA523D84CF7006CE92A /* Home */,
+				6B0D090F23D7109600BA4FA9 /* SignUp */,
+				6B8E5CA023D6E3DF008646AF /* LaunchScreen.storyboard */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		6B8E5C9F23D6E36A008646AF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6B692CB023EAB1280028F91E /* Matche.swift */,
+				6B692CAD23EAB1280028F91E /* Room.swift */,
+				6B692CAE23EAB1280028F91E /* Team.swift */,
+				6BB309E924005F4D003A9491 /* Bet.swift */,
+				6BB309EB2400675B003A9491 /* Player.swift */,
+				6BB309ED24006E2A003A9491 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6BB309E424005AF9003A9491 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				6BB309E524005B43003A9491 /* AuthenticationViewController.swift */,
+				6BB309E624005B43003A9491 /* AuthenticationViewController.xib */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		6BB309EF240075C8003A9491 /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				6BB309F1240075EE003A9491 /* TeamWebService.swift */,
+				6BB309F5240078F3003A9491 /* MatcheWebService.swift */,
+				6BB309F9240079F7003A9491 /* PlayerWebService.swift */,
+				6BB309FD24007B57003A9491 /* RoomWebService.swift */,
+				6BB30A0124007C36003A9491 /* UserWebService.swift */,
+				6BB30A0524007CFC003A9491 /* BetWebService.swift */,
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		6BB309F0240075CF003A9491 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				6B692CC123EAB1510028F91E /* TeamFactory.swift */,
+				6BB309F3240077F3003A9491 /* MatcheFactory.swift */,
+				6BB309F724007954003A9491 /* PlayerFactory.swift */,
+				6BB309FB24007ACF003A9491 /* RoomFactory.swift */,
+				6BB309FF24007BAF003A9491 /* UserFactory.swift */,
+				6BB30A0324007C77003A9491 /* BetFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		6BFD2EA523D84CF7006CE92A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6BFD2EC023D9AA1F006CE92A /* HomeTableViewController.swift */,
+				6BFD2EC123D9AA1F006CE92A /* HomeTableViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6BFD2EAA23D99B35006CE92A /* MatchCell */ = {
+			isa = PBXGroup;
+			children = (
+				6BFD2EB923D9A9AF006CE92A /* MatchTableViewCell.swift */,
+				6BFD2EB823D9A9AF006CE92A /* MatchTableViewCell.xib */,
+			);
+			path = MatchCell;
+			sourceTree = "<group>";
+		};
+		6BFD2EAB23D99B40006CE92A /* RoomCell */ = {
+			isa = PBXGroup;
+			children = (
+				6BFD2EB023D99B64006CE92A /* RoomTableViewCell.swift */,
+				6BFD2EB123D99B64006CE92A /* RoomTableViewCell.xib */,
+			);
+			path = RoomCell;
+			sourceTree = "<group>";
+		};
+		CF6E514623FE0BC900CE8F42 /* CreateRoom */ = {
+			isa = PBXGroup;
+			children = (
+				CF6E514723FE0BE700CE8F42 /* CreateRoomViewController.swift */,
+				CF6E514823FE0BE700CE8F42 /* CreateRoomViewController.xib */,
+			);
+			path = CreateRoom;
+			sourceTree = "<group>";
+		};
+		CF8D6CC923FCD1090032B0A8 /* DeleteRoom */ = {
+			isa = PBXGroup;
+			children = (
+				CF8D6CCE23FCD1830032B0A8 /* DeleteRoomViewController.swift */,
+				CF8D6CCF23FCD1830032B0A8 /* DeleteRoomViewController.xib */,
+			);
+			path = DeleteRoom;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B8E5C7723D5DF94008646AF /* BetSGI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B8E5C9723D5DF97008646AF /* Build configuration list for PBXNativeTarget "BetSGI" */;
+			buildPhases = (
+				6B8E5C7423D5DF94008646AF /* Sources */,
+				6B8E5C7523D5DF94008646AF /* Frameworks */,
+				6B8E5C7623D5DF94008646AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BetSGI;
+			productName = BetSGI;
+			productReference = 6B8E5C7823D5DF94008646AF /* BetSGI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6B8E5C8D23D5DF97008646AF /* BetSGIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B8E5C9A23D5DF97008646AF /* Build configuration list for PBXNativeTarget "BetSGIUITests" */;
+			buildPhases = (
+				6B8E5C8A23D5DF97008646AF /* Sources */,
+				6B8E5C8B23D5DF97008646AF /* Frameworks */,
+				6B8E5C8C23D5DF97008646AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B8E5C9023D5DF97008646AF /* PBXTargetDependency */,
+			);
+			name = BetSGIUITests;
+			productName = BetSGIUITests;
+			productReference = 6B8E5C8E23D5DF97008646AF /* BetSGIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B8E5C7023D5DF94008646AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = SoKaii;
+				TargetAttributes = {
+					6B8E5C7723D5DF94008646AF = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					6B8E5C8D23D5DF97008646AF = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 6B8E5C7723D5DF94008646AF;
+					};
+				};
+			};
+			buildConfigurationList = 6B8E5C7323D5DF94008646AF /* Build configuration list for PBXProject "BetSGI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B8E5C6F23D5DF94008646AF;
+			productRefGroup = 6B8E5C7923D5DF94008646AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B8E5C7723D5DF94008646AF /* BetSGI */,
+				6B8E5C8D23D5DF97008646AF /* BetSGIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B8E5C7623D5DF94008646AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B0D090B23D704AA00BA4FA9 /* Screenshot at Jan 21 10-41-40.png in Resources */,
+				6BFD2EC323D9AA1F006CE92A /* HomeTableViewController.xib in Resources */,
+				6BFD2EBA23D9A9AF006CE92A /* MatchTableViewCell.xib in Resources */,
+				CF8D6CD123FCD1830032B0A8 /* DeleteRoomViewController.xib in Resources */,
+				CF6E514A23FE0BE700CE8F42 /* CreateRoomViewController.xib in Resources */,
+				6BB309E824005B43003A9491 /* AuthenticationViewController.xib in Resources */,
+				6B8E5C8523D5DF96008646AF /* Assets.xcassets in Resources */,
+				6B0D090923D6F85600BA4FA9 /* KaushanScript-Regular.otf in Resources */,
+				6B0D090623D6F72C00BA4FA9 /* Milkshake.ttf in Resources */,
+				6B0D091323D710B500BA4FA9 /* SignUpViewController.xib in Resources */,
+				6B8E5CA123D6E3DF008646AF /* LaunchScreen.storyboard in Resources */,
+				6BFD2EB323D99B64006CE92A /* RoomTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B8E5C8C23D5DF97008646AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B8E5C7423D5DF94008646AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BB309F6240078F3003A9491 /* MatcheWebService.swift in Sources */,
+				6BFD2EC223D9AA1F006CE92A /* HomeTableViewController.swift in Sources */,
+				6BFD2EBB23D9A9AF006CE92A /* MatchTableViewCell.swift in Sources */,
+				6BFD2EB223D99B64006CE92A /* RoomTableViewCell.swift in Sources */,
+				6B692CC823EAB1510028F91E /* TeamFactory.swift in Sources */,
+				6BB30A0224007C36003A9491 /* UserWebService.swift in Sources */,
+				6BB309FA240079F7003A9491 /* PlayerWebService.swift in Sources */,
+				6BB309EC2400675B003A9491 /* Player.swift in Sources */,
+				6BB30A0624007CFC003A9491 /* BetWebService.swift in Sources */,
+				6BB309F2240075EE003A9491 /* TeamWebService.swift in Sources */,
+				6BB309FC24007ACF003A9491 /* RoomFactory.swift in Sources */,
+				6BB309FE24007B57003A9491 /* RoomWebService.swift in Sources */,
+				6BB30A0024007BAF003A9491 /* UserFactory.swift in Sources */,
+				6BB309F824007954003A9491 /* PlayerFactory.swift in Sources */,
+				6BB309E724005B43003A9491 /* AuthenticationViewController.swift in Sources */,
+				6B0D091223D710B500BA4FA9 /* SignUpViewController.swift in Sources */,
+				6B692CB523EAB1280028F91E /* Room.swift in Sources */,
+				6BB309EE24006E2A003A9491 /* User.swift in Sources */,
+				CF6E514923FE0BE700CE8F42 /* CreateRoomViewController.swift in Sources */,
+				6BB30A0424007C77003A9491 /* BetFactory.swift in Sources */,
+				6BB309F4240077F3003A9491 /* MatcheFactory.swift in Sources */,
+				CF8D6CD023FCD1830032B0A8 /* DeleteRoomViewController.swift in Sources */,
+				6BB309EA24005F4D003A9491 /* Bet.swift in Sources */,
+				6B692CB623EAB1280028F91E /* Team.swift in Sources */,
+				6B8E5C7C23D5DF94008646AF /* AppDelegate.swift in Sources */,
+				6B692CB823EAB1280028F91E /* Matche.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B8E5C8A23D5DF97008646AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B8E5C9323D5DF97008646AF /* BetSGIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B8E5C9023D5DF97008646AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B8E5C7723D5DF94008646AF /* BetSGI */;
+			targetProxy = 6B8E5C8F23D5DF97008646AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6B8E5C9523D5DF97008646AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6B8E5C9623D5DF97008646AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B8E5C9823D5DF97008646AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YRQ424FS9D;
+				INFOPLIST_FILE = BetSGI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sokaii.BetSGI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B8E5C9923D5DF97008646AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YRQ424FS9D;
+				INFOPLIST_FILE = BetSGI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sokaii.BetSGI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6B8E5C9B23D5DF97008646AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YRQ424FS9D;
+				INFOPLIST_FILE = BetSGIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sokaii.BetSGIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BetSGI;
+			};
+			name = Debug;
+		};
+		6B8E5C9C23D5DF97008646AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YRQ424FS9D;
+				INFOPLIST_FILE = BetSGIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sokaii.BetSGIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BetSGI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B8E5C7323D5DF94008646AF /* Build configuration list for PBXProject "BetSGI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B8E5C9523D5DF97008646AF /* Debug */,
+				6B8E5C9623D5DF97008646AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B8E5C9723D5DF97008646AF /* Build configuration list for PBXNativeTarget "BetSGI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B8E5C9823D5DF97008646AF /* Debug */,
+				6B8E5C9923D5DF97008646AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B8E5C9A23D5DF97008646AF /* Build configuration list for PBXNativeTarget "BetSGIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B8E5C9B23D5DF97008646AF /* Debug */,
+				6B8E5C9C23D5DF97008646AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B8E5C7023D5DF94008646AF /* Project object */;
+}
