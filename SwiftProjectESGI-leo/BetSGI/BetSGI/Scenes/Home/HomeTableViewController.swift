@@ -16,6 +16,7 @@ class HomeTableViewController: UIViewController, UITableViewDataSource, UITableV
     
     let roomWebService: RoomWebService = RoomWebService()
     var rooms : [Room]!
+    
     let dateFormatter = DateFormatter()
     
     @IBOutlet var tableV: UITableView!

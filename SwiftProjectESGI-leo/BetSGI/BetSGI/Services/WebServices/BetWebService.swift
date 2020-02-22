@@ -38,4 +38,20 @@ class BetWebService {
         task.resume()
     }
     
+    func createBet(bet: Bet, completion: @escaping (Bool) -> Void) -> Void {
+            guard let betURL = URL(string: "http://127.0.0.1:8000/api/bets") else {
+                return;
+            }
+            var request = URLRequest(url: betURL)
+            request.httpMethod = "POST"
+            request.httpBody = try? JSONSerialization.data(withJSONObject: BetFactory.dictionnaryFrom(bet: bet), options: .fragmentsAllowed)
+            request.setValue("application/json", forHTTPHeaderField: "content-type")
+            let task = URLSession.shared.dataTask(with: request, completionHandler: { (data, res, err) in
+                if let httpRes = res as? HTTPURLResponse {
+                    completion(httpRes.statusCode == 201)
+                }
+                completion(false)
+            })
+            task.resume()
+        }
 }

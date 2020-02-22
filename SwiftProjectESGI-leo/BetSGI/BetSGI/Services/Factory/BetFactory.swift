@@ -20,4 +20,14 @@ class BetFactory {
         }
         return Bet(id: i, user_id: ui, room_id: ri, matche_id: mi)
     }
+    
+    static func dictionnaryFrom(bet: Bet) -> [String: Any] {
+        return [
+            "id": bet.id,
+            "user": bet.user_id,
+            "Room": bet.room_id,
+            "matche": bet.matche_id
+        ]
+    }
+    
 }

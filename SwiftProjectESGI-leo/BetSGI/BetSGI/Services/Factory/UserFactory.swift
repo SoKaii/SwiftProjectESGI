@@ -23,4 +23,16 @@ class UserFactory {
         }
         return User(id: i, first_name: fn, last_name: ln, password: p, mail: m, win: w, loss: l)
     }
+    
+    static func dictionnaryFrom(user: User) -> [String: Any] {
+        return [
+            "id": user.id,
+            "firstName": user.first_name,
+            "lastName": user.last_name,
+            "mail": user.mail,
+            "password": user.password,
+            "win": user.win,
+            "loss": user.loss
+        ]
+    }
 }

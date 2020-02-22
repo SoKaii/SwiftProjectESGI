@@ -12,12 +12,12 @@ class PlayerFactory {
     
     static func playerFrom(dictionary: [String: Any]) -> Player? {
         guard let i = dictionary["id"] as? String,
-              let ti = dictionary["team_id"] as? String,
+              let ti = dictionary["team"] as? String,
               let n = dictionary["nationality"] as? String,
               let p = dictionary["position"] as? String,
-              let fn = dictionary["first_name"] as? String,
-              let ln = dictionary["last_name"] as? String,
-              let lu = dictionary["last_update"] as? Date
+              let fn = dictionary["firstName"] as? String,
+              let ln = dictionary["lastName"] as? String,
+              let lu = dictionary["lastUpdate"] as? Date
         else {
                 return nil
         }

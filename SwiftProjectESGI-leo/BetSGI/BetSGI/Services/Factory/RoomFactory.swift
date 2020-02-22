@@ -20,4 +20,12 @@ class RoomFactory {
         }
         return Room(id: i, name: n, privacy: p)
     }
+    
+    static func dictionnaryFrom(room: Room) -> [String: Any] {
+          return [
+            "id": room.id,
+            "name": room.name,
+            "privacy": room.privacy
+          ]
+      }
 }

@@ -18,8 +18,7 @@ class UserWebService {
         let task = URLSession.shared.dataTask(with: userURL) { (data,res,err) in
             guard let bytes = data,
                 err == nil,
-                let json = try? JSONSerialization.jsonObject(with: bytes, options: .allowFragments)
-                    as? [Any] else {
+                let json = try? JSONSerialization.jsonObject(with: bytes, options: .allowFragments) as? [Any] else {
                         DispatchQueue.main.sync {
                             completion([])
                         }
@@ -37,5 +36,22 @@ class UserWebService {
         }
         task.resume()
     }
+    
+    func createUser(user: User, completion: @escaping (Bool) -> Void) -> Void {
+            guard let userURL = URL(string: "http://127.0.0.1:8000/api/users") else {
+                return;
+            }
+            var request = URLRequest(url: userURL)
+            request.httpMethod = "POST"
+            request.httpBody = try? JSONSerialization.data(withJSONObject: UserFactory.dictionnaryFrom(user: user), options: .fragmentsAllowed)
+            request.setValue("application/json", forHTTPHeaderField: "content-type")
+            let task = URLSession.shared.dataTask(with: request, completionHandler: { (data, res, err) in
+                if let httpRes = res as? HTTPURLResponse {
+                    completion(httpRes.statusCode == 201)
+                }
+                completion(false)
+            })
+            task.resume()
+        }
     
 }

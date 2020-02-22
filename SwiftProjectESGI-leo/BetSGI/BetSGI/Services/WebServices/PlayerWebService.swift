@@ -18,8 +18,7 @@ class PlayerWebService {
         let task = URLSession.shared.dataTask(with: playerURL) { (data,res,err) in
             guard let bytes = data,
                 err == nil,
-                let json = try? JSONSerialization.jsonObject(with: bytes, options: .allowFragments)
-                    as? [Any] else {
+                let json = try? JSONSerialization.jsonObject(with: bytes, options: .allowFragments) as? [Any] else {
                         DispatchQueue.main.sync {
                             completion([])
                         }

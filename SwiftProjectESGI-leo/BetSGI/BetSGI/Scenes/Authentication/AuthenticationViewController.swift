@@ -30,9 +30,9 @@ class AuthenticationViewController: UIViewController {
                 self.navigationController?.pushViewController(htvc, animated: true)
                 print(rooms)
             }) } else {
-            self.errorMessage.text = "Mail ou mot de passe incorrect"
-            self.errorMessage.isHidden = false
-        }
+                self.errorMessage.text = "Mail ou mot de passe incorrect"
+                self.errorMessage.isHidden = false
+            }
     }
     
     
