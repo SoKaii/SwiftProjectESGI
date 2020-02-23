@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="KaushanScript-Regular.otf">
+            <string>KaushanScript-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthenticationViewController" customModule="BetSGI" customModuleProvider="target">
+            <connections>
+                <outlet property="errorMessage" destination="pKz-Vl-Dyn" id="Bwg-4Q-JpI"/>
+                <outlet property="mailField" destination="h89-IY-Wb1" id="yvG-qx-oNq"/>
+                <outlet property="pwdField" destination="nhp-Ls-kgI" id="DYP-SE-DEY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="green-iphone-wallpaper-19" translatesAutoresizingMaskIntoConstraints="NO" id="PB6-Fz-H0g">
+                    <rect key="frame" x="-1553" y="-575" width="4209" height="2027"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BetSGI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APx-Ot-pkv">
+                    <rect key="frame" x="98" y="94" width="218" height="102"/>
+                    <fontDescription key="fontDescription" name="KaushanScript-Regular" family="Kaushan Script" pointSize="70"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adresse Mail : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPz-vj-bw1" userLabel="mailLabel">
+                    <rect key="frame" x="30" y="290" width="174.33333333333334" height="43.666666666666686"/>
+                    <fontDescription key="fontDescription" name="KaushanScript-Regular" family="Kaushan Script" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Erreur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKz-Vl-Dyn" userLabel="errorMessage">
+                    <rect key="frame" x="180" y="246" width="54" height="29"/>
+                    <fontDescription key="fontDescription" name="KaushanScript-Regular" family="Kaushan Script" pointSize="20"/>
+                    <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h89-IY-Wb1" userLabel="mailField">
+                    <rect key="frame" x="30" y="343.66666666666669" width="354" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="editMail:" destination="-1" eventType="editingChanged" id="iBu-hX-PRR"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mot de passe : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mu5-mw-coO" userLabel="pwdLabel">
+                    <rect key="frame" x="30" y="474" width="175.33333333333334" height="43.666666666666629"/>
+                    <fontDescription key="fontDescription" name="KaushanScript-Regular" family="Kaushan Script" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nhp-Ls-kgI" userLabel="pwdField">
+                    <rect key="frame" x="30" y="527.66666666666663" width="354" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                    <connections>
+                        <action selector="editPwd:" destination="-1" eventType="editingChanged" id="bxD-No-pcc"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2020 E S G I" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YiP-17-otK">
+                    <rect key="frame" x="115.33333333333333" y="861" width="183.33333333333337" height="25"/>
+                    <fontDescription key="fontDescription" name="KaushanScript-Regular" family="Kaushan Script" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xTw-1V-8Wx" userLabel="SignUp">
+                    <rect key="frame" x="30" y="675" width="132" height="62"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="KaushanScript-Regular" family="Kaushan Script" pointSize="34"/>
+                    <state key="normal" title="S'inscrire">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="signUp:" destination="-1" eventType="touchUpInside" id="Siw-R5-oh2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IpE-Ea-c0I" userLabel="SignIn">
+                    <rect key="frame" x="227" y="675" width="142" height="62"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="KaushanScript-Regular" family="Kaushan Script" pointSize="34"/>
+                    <state key="normal" title="Connexion">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="signIn:" destination="-1" eventType="touchUpInside" id="T0O-ql-M4S"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="YiP-17-otK" secondAttribute="bottom" constant="10" id="6YD-np-0IX"/>
+                <constraint firstItem="h89-IY-Wb1" firstAttribute="top" secondItem="MPz-vj-bw1" secondAttribute="bottom" constant="10" id="BeF-Ip-KqZ"/>
+                <constraint firstItem="APx-Ot-pkv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="BsA-M7-cWt"/>
+                <constraint firstItem="APx-Ot-pkv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Cz2-5w-dhn"/>
+                <constraint firstItem="nhp-Ls-kgI" firstAttribute="top" secondItem="Mu5-mw-coO" secondAttribute="bottom" constant="10" id="DUh-vP-R3T"/>
+                <constraint firstItem="MPz-vj-bw1" firstAttribute="top" secondItem="pKz-Vl-Dyn" secondAttribute="bottom" constant="15" id="Hib-C5-Lan"/>
+                <constraint firstItem="h89-IY-Wb1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="OLI-TU-giI"/>
+                <constraint firstItem="pKz-Vl-Dyn" firstAttribute="top" secondItem="APx-Ot-pkv" secondAttribute="bottom" constant="50" id="PRk-6D-ybZ"/>
+                <constraint firstItem="nhp-Ls-kgI" firstAttribute="top" secondItem="h89-IY-Wb1" secondAttribute="bottom" constant="150" id="R58-LY-MfQ"/>
+                <constraint firstItem="nhp-Ls-kgI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="UB8-ms-GE4"/>
+                <constraint firstItem="pKz-Vl-Dyn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Uf2-7Q-7gr"/>
+                <constraint firstItem="MPz-vj-bw1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="VbE-7F-aSh"/>
+                <constraint firstItem="h89-IY-Wb1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YjT-Ow-4W9"/>
+                <constraint firstItem="YiP-17-otK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="amr-qW-HCx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nhp-Ls-kgI" secondAttribute="trailing" constant="30" id="cGA-y9-ppm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="h89-IY-Wb1" secondAttribute="trailing" constant="30" id="vgb-iF-cva"/>
+                <constraint firstItem="Mu5-mw-coO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="wNf-ee-lVk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="100" y="181"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="green-iphone-wallpaper-19" width="750" height="1334"/>
+    </resources>
+</document>
