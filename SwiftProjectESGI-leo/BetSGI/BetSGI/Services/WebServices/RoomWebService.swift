@@ -10,9 +10,10 @@ import Foundation
 
 
 class RoomWebService {
+    let baseURL = "http://127.0.0.1:8000/api"
     
     func getRooms(completion: @escaping ([Room]) -> Void) -> Void {
-        guard let roomURL = URL(string: "http://127.0.0.1:8000/api/rooms") else {
+        guard let roomURL = URL(string: baseURL + "/rooms") else {
             return;
         }
         let task = URLSession.shared.dataTask(with: roomURL) { (data,res,err) in
@@ -39,7 +40,7 @@ class RoomWebService {
     }
     
     func createRoom(room: Room, completion: @escaping (Bool) -> Void) -> Void {
-           guard let roomURL = URL(string: "http://127.0.0.1:8000/api/rooms") else {
+           guard let roomURL = URL(string: baseURL + "/rooms") else {
                return;
            }
            var request = URLRequest(url: roomURL)
@@ -54,5 +55,21 @@ class RoomWebService {
            })
            task.resume()
        }
+    
+    func deleteRoom(room: Room, completion: @escaping (Bool) -> Void) -> Void {
+        guard let deleteRoomURL = URL(string: baseURL + "/room/create/:" + room.id) else {
+            return;
+        }
+        var request = URLRequest(url: deleteRoomURL)
+        request.httpMethod = "DELETE"
+        request.setValue("application/json", forHTTPHeaderField: "content-type")
+        let task = URLSession.shared.dataTask(with: request, completionHandler: { (data, res, err) in
+            if let httpRes = res as? HTTPURLResponse {
+                completion(httpRes.statusCode == 201)
+            }
+            completion(false)
+        })
+        task.resume()
+    }
     
 }

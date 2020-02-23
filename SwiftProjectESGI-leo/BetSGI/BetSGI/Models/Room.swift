@@ -18,4 +18,10 @@ class Room {
         self.name = name
         self.privacy = privacy
     }
+    
+    init(name: String) {
+        self.name = name
+        self.id = "0"
+        self.privacy = 0
+    }
 }

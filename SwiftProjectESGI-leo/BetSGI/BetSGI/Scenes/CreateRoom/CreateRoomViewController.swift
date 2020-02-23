@@ -13,15 +13,30 @@ class CreateRoomViewController: UIViewController {
     @IBOutlet var nameRoom: UITextField!
     @IBOutlet var createRoom: UIButton!
     
+    let roomWebService : RoomWebService = RoomWebService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
     }
+    
+    class func newInstance() -> CreateRoomViewController {
+        let createRoom = CreateRoomViewController()
+        return createRoom
+    }
 
     @IBAction func submitRoom(_sender: Any){
-        let name = self.nameRoom.text
+        guard let name = self.nameRoom.text else {
+            return
+        }
+        print(name)
+        let room = Room(name: name)
 //        Appel du WService pour créer une room
+        roomWebService.createRoom(room: room) {
+            (success) in
+            print("\(success)")
+        }
     }
     
     /*

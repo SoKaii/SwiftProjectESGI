@@ -12,7 +12,18 @@ class DeleteRoomViewController: UIViewController {
     
     @IBOutlet var deleteRoom: UIButton!
     @IBOutlet var cancelDelete: UIButton!
+    
+    var room: Room!
+    
+    let roomWebService: RoomWebService = RoomWebService()
 
+    class func newInstance(room: Room) -> DeleteRoomViewController {
+        let deleteRoom = DeleteRoomViewController()
+        deleteRoom.room = room
+        return deleteRoom
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,9 +32,14 @@ class DeleteRoomViewController: UIViewController {
 
     @IBAction func deleteUserOfRoom(_sender: Any) {
 //        Appel du wService pour supprimer la room de la liste de cette utilisateur
+        roomWebService.deleteRoom(room: room) {
+            (success) in
+            print("\(success)")
+        }
+        
         print("delete Room")        // for test
-        // let home = HomeTableViewController.newInstance(rooms: [Room])
-        //self.navigationController?.pushViewController(home, animated: true) // Rechargement d'une page avec toute les room actualiser
+//        let home = HomeTableViewController.newInstance(rooms: [Room])
+//        self.navigationController?.pushViewController(home, animated: true) // Rechargement d'une page avec toute les room actualiser
     }
     
     

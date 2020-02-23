@@ -31,10 +31,16 @@ class HomeTableViewController: UIViewController, UITableViewDataSource, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableV.register(UINib(nibName: "RoomTableViewCell", bundle: nil), forCellReuseIdentifier: Identifier.rooms.rawValue)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(touchCreate))
         self.tableV.dataSource = self
         
     }
 
+    @objc func touchCreate() {
+        let createRoom = CreateRoomViewController.newInstance()
+        self.navigationController?.pushViewController(createRoom, animated: true)
+    }
+    
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Identifier.rooms.rawValue, for: indexPath) as! RoomTableViewCell
         return cell
