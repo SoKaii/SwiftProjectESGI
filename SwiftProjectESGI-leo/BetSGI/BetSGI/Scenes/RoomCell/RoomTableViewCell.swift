@@ -37,11 +37,11 @@ class RoomTableViewCell: UITableViewCell {
         room = Room(name: "RoomTest") // Pour tester sans wService
              roomName.text = room.name
              
-         /*
+         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(RoomTableViewCell.deleteRoom))
         deleteImage.isUserInteractionEnabled = true
         deleteImage.addGestureRecognizer(tapGestureRecognizer)
-        // Initialization code */
+        // Initialization code
     }
     
      @objc

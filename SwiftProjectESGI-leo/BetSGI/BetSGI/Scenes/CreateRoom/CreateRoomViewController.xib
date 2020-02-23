@@ -55,6 +55,13 @@
                         <action selector="submitRoomWith_sender:" destination="-1" eventType="touchUpInside" id="QVW-9J-DwR"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Création d'une salle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLE-N2-wIB">
+                    <rect key="frame" x="91" y="73" width="230" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="KaushanScript-Regular" family="Kaushan Script" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -65,7 +72,6 @@
                 <constraint firstItem="A3Y-6C-rjN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="RLq-sr-nZR"/>
                 <constraint firstItem="A3Y-6C-rjN" firstAttribute="top" secondItem="amX-AX-5c4" secondAttribute="bottom" constant="122" id="qmR-FU-HfG"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="A3Y-6C-rjN" secondAttribute="bottom" constant="447" id="vqs-0G-XtU"/>
-                <constraint firstItem="GS7-vc-1vH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="105" id="yoV-lk-gnr"/>
                 <constraint firstItem="amX-AX-5c4" firstAttribute="top" secondItem="GS7-vc-1vH" secondAttribute="bottom" constant="10" id="zAN-SW-Dl4"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
